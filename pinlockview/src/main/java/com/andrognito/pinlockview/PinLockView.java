@@ -2,6 +2,7 @@ package com.andrognito.pinlockview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.RecyclerView;
@@ -28,6 +29,7 @@ public class PinLockView extends RecyclerView {
     private Drawable mButtonBackgroundDrawable;
     private Drawable mDeleteButtonDrawable;
     private boolean mShowDeleteButton;
+    private Typeface mTextTypeface;
 
     private IndicatorDots mIndicatorDots;
     private PinLockAdapter mAdapter;
@@ -249,6 +251,16 @@ public class PinLockView extends RecyclerView {
     public void setTextSize(int textSize) {
         this.mTextSize = textSize;
         mCustomizationOptionsBundle.setTextSize(textSize);
+        mAdapter.notifyDataSetChanged();
+    }
+
+    /**
+     * Set numpad typeface
+     * @param typeface Typeface
+     */
+    public void setTypeface(Typeface typeface) {
+        this.mTextTypeface = typeface;
+        mCustomizationOptionsBundle.setTextTypeface(typeface);
         mAdapter.notifyDataSetChanged();
     }
 

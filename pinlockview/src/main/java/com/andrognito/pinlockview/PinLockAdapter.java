@@ -84,6 +84,7 @@ public class PinLockAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 }
                 holder.mNumberButton.setTextSize(TypedValue.COMPLEX_UNIT_PX,
                         mCustomizationOptionsBundle.getTextSize());
+                holder.mNumberButton.setTypeface(mCustomizationOptionsBundle.getTextTypeface());
                 LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                         mCustomizationOptionsBundle.getButtonSize(),
                         mCustomizationOptionsBundle.getButtonSize());
