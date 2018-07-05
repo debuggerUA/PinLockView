@@ -16,6 +16,7 @@ public class CustomizationOptionsBundle {
     private int buttonSize;
     private Drawable buttonBackgroundDrawable;
     private Drawable deleteButtonDrawable;
+    private String deleteButtonText;
     private int deleteButtonSize;
     private boolean showDeleteButton;
     private int deleteButtonPressesColor;
@@ -62,6 +63,14 @@ public class CustomizationOptionsBundle {
 
     public void setDeleteButtonDrawable(Drawable deleteButtonDrawable) {
         this.deleteButtonDrawable = deleteButtonDrawable;
+    }
+
+    public String getDeleteButtonText() {
+        return deleteButtonText;
+    }
+
+    public void setDeleteButtonText(String text) {
+        this.deleteButtonText = text;
     }
 
     public int getDeleteButtonSize() {

@@ -28,6 +28,7 @@ public class PinLockView extends RecyclerView {
     private int mTextSize, mButtonSize, mDeleteButtonSize;
     private Drawable mButtonBackgroundDrawable;
     private Drawable mDeleteButtonDrawable;
+    private String mDeleteButtonText;
     private boolean mShowDeleteButton;
     private Typeface mTextTypeface;
 
@@ -321,6 +322,12 @@ public class PinLockView extends RecyclerView {
     public void setDeleteButtonDrawable(Drawable deleteBackgroundDrawable) {
         this.mDeleteButtonDrawable = deleteBackgroundDrawable;
         mCustomizationOptionsBundle.setDeleteButtonDrawable(deleteBackgroundDrawable);
+        mAdapter.notifyDataSetChanged();
+    }
+
+    public void setmDeleteButtonText(String text) {
+        this.mDeleteButtonText = text;
+        mCustomizationOptionsBundle.setDeleteButtonText(text);
         mAdapter.notifyDataSetChanged();
     }
 

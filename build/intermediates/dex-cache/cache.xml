@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/denisbabak/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/pre-dexed/release/support-annotations-25.3.1_54d19ab8b420ce1b05a9185a12c7cb0bdc276b27.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/pre-dexed/release/com.android.support-support-core-utils-25.3.1_921734c330256fe430583b037ec62cb6e427f712.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/pre-dexed/release/com.android.support-recyclerview-v7-25.3.1_9e157510f71a24b34598b066c20889dccd1bc369.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/pre-dexed/release/com.android.support-support-media-compat-25.3.1_506b4e7aec9008c916a7f0b794822b0d54ed6944.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/pre-dexed/release/com.android.support-appcompat-v7-25.3.1_0ab81e2eaf901336529e97c85d3f2401834fa61c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/exploded-aar/com.andrognito.pinlockview/pinlockview/2.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="29f769313636f746d350774eb2a24df6bbcc30bc">
+        <dex dex="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/pre-dexed/release/com.andrognito.pinlockview-pinlockview-2.1.0_b9f3cba58ea859e434b583d1b91e6ef887e6fbec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/pre-dexed/release/com.android.support-support-core-ui-25.3.1_87a4a944670c007df6480db016e3f399c102165f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/pre-dexed/release/com.android.support-support-fragment-25.3.1_347fa1275e45ed218a37284a785a3085e1bc6f9b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/pre-dexed/release/com.android.support-animated-vector-drawable-25.3.1_c53082cf65324a47bf11ff1d2f2eb4fdd784b9a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/pre-dexed/release/com.android.support-support-compat-25.3.1_a809b1de3c842ad24f44040027f1e27c9a6bdc7c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/pre-dexed/release/com.android.support-support-v4-25.3.1_60d495c70ee54a690344ca9786b4b155107a766f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/denisbabak/Documents/Work/repo/PinLockView/app/build/intermediates/pre-dexed/release/com.android.support-support-vector-drawable-25.3.1_d82fc5c7984a6d78cdd66de49bbeecfbff10199d.jar" />
+    </item>
+
+</items>

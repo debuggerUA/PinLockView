@@ -3,6 +3,7 @@ package com.andrognito.pinlockview;
 import android.animation.LayoutTransition;
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.IntDef;
 import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
@@ -37,6 +38,7 @@ public class IndicatorDots extends LinearLayout {
     private int mEmptyDrawable;
     private int mPinLength;
     private int mIndicatorType;
+    private Drawable mEmptyCustomDrawable;
 
     private int mPreviousLength;
 
@@ -141,7 +143,11 @@ public class IndicatorDots extends LinearLayout {
     }
 
     private void emptyDot(View dot) {
-        dot.setBackgroundResource(mEmptyDrawable);
+        if(mEmptyCustomDrawable != null) {
+            dot.setBackgroundDrawable(mEmptyCustomDrawable);
+        } else {
+            dot.setBackgroundResource(mEmptyDrawable);
+        }
     }
 
     private void fillDot(View dot) {
@@ -168,5 +174,9 @@ public class IndicatorDots extends LinearLayout {
         this.mIndicatorType = type;
         removeAllViews();
         initView(getContext());
+    }
+
+    public void setEmptyDrawable(Drawable drawable) {
+        this.mEmptyCustomDrawable = drawable;
     }
 }

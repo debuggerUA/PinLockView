@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/denisbabak/Documents/Work/repo/PinLockView/pinlockview/build/intermediates/res/merged/release/layout-v21/notification_action.xml",
+        "source": "/Users/denisbabak/Documents/Work/repo/PinLockView/pinlockview/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/denisbabak/Documents/Work/repo/PinLockView/pinlockview/build/intermediates/res/merged/release/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/denisbabak/Documents/Work/repo/PinLockView/pinlockview/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/denisbabak/Documents/Work/repo/PinLockView/pinlockview/build/intermediates/res/merged/release/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/denisbabak/Documents/Work/repo/PinLockView/pinlockview/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/denisbabak/Documents/Work/repo/PinLockView/pinlockview/build/intermediates/res/merged/release/layout-v21/layout_number_item.xml",
+        "source": "/Users/denisbabak/Documents/Work/repo/PinLockView/pinlockview/src/main/res/layout-v21/layout_number_item.xml"
+    },
+    {
+        "merged": "/Users/denisbabak/Documents/Work/repo/PinLockView/pinlockview/build/intermediates/res/merged/release/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/denisbabak/Documents/Work/repo/PinLockView/pinlockview/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/layout-v21/notification_template_custom_big.xml"
+    }
+]

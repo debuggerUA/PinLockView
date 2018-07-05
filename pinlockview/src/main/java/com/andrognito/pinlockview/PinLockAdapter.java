@@ -3,8 +3,12 @@ package com.andrognito.pinlockview;
 import android.content.Context;
 import android.graphics.PorterDuff;
 import android.graphics.Rect;
+import android.graphics.Typeface;
 import android.os.Build;
+import android.support.v7.widget.AppCompatButton;
+import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -13,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 /**
  * Created by aritraroy on 31/05/16.
@@ -97,17 +102,40 @@ public class PinLockAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         if (holder != null) {
             if (mCustomizationOptionsBundle.isShowDeleteButton() && mPinLength > 0) {
                 holder.mButtonImage.setVisibility(View.VISIBLE);
+                holder.mButtonText.setVisibility(View.GONE);
                 if (mCustomizationOptionsBundle.getDeleteButtonDrawable() != null) {
                     holder.mButtonImage.setImageDrawable(mCustomizationOptionsBundle.getDeleteButtonDrawable());
+                    holder.mButtonImage.setColorFilter(mCustomizationOptionsBundle.getTextColor(),
+                            PorterDuff.Mode.SRC_ATOP);
+                    LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                            mCustomizationOptionsBundle.getDeleteButtonSize(),
+                            mCustomizationOptionsBundle.getDeleteButtonSize());
+                    holder.mButtonImage.setLayoutParams(params);
+                } else if(mCustomizationOptionsBundle.getDeleteButtonText() != null) {
+                    holder.mButtonImage.setVisibility(View.GONE);
+                    holder.mButtonText.setVisibility(View.VISIBLE);
+                    if (mCustomizationOptionsBundle.getButtonBackgroundDrawable() != null) {
+                        if (Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.JELLY_BEAN) {
+                            holder.mButtonText.setBackgroundDrawable(
+                                    mCustomizationOptionsBundle.getButtonBackgroundDrawable());
+                        } else {
+                            holder.mButtonText.setBackground(
+                                    mCustomizationOptionsBundle.getButtonBackgroundDrawable());
+                        }
+                    }
+                    holder.mButtonText.setText(mCustomizationOptionsBundle.getDeleteButtonText());
+                    LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                            mCustomizationOptionsBundle.getButtonSize(),
+                            mCustomizationOptionsBundle.getButtonSize());
+                    holder.mButtonText.setLayoutParams(params);
+                    holder.mButtonText.setTextColor(mCustomizationOptionsBundle.getTextColor());
+                    holder.mButtonText.setTextSize(TypedValue.COMPLEX_UNIT_PX,
+                            mCustomizationOptionsBundle.getTextSize());
+                    holder.mButtonText.setTypeface(mCustomizationOptionsBundle.getTextTypeface());
                 }
-                holder.mButtonImage.setColorFilter(mCustomizationOptionsBundle.getTextColor(),
-                        PorterDuff.Mode.SRC_ATOP);
-                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                        mCustomizationOptionsBundle.getDeleteButtonSize(),
-                        mCustomizationOptionsBundle.getDeleteButtonSize());
-                holder.mButtonImage.setLayoutParams(params);
             } else {
                 holder.mButtonImage.setVisibility(View.GONE);
+                holder.mButtonText.setVisibility(View.GONE);
             }
         }
     }
@@ -199,11 +227,13 @@ public class PinLockAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     public class DeleteViewHolder extends RecyclerView.ViewHolder {
         LinearLayout mDeleteButton;
         ImageView mButtonImage;
+        TextView mButtonText;
 
         public DeleteViewHolder(final View itemView) {
             super(itemView);
             mDeleteButton = (LinearLayout) itemView.findViewById(R.id.button);
             mButtonImage = (ImageView) itemView.findViewById(R.id.buttonImage);
+            mButtonText = (TextView) itemView.findViewById(R.id.buttonText);
 
             if (mCustomizationOptionsBundle.isShowDeleteButton() && mPinLength > 0) {
                 mDeleteButton.setOnClickListener(new View.OnClickListener() {
